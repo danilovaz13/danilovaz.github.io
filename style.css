@@ -1,0 +1,115 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 1200px;
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-image: linear-gradient(lightblue, white);
+  height: 15vh;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: linear-gradient(white, lightblue);
+}
+
+.title {
+  justify-self: center;
+  margin: 0;
+}
+
+.sobremim {
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+  font-size: 120%;
+}
+
+.foto {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  grid-column: 2;
+  grid-row: 2;
+}
+.botao-currilo {
+  grid-column: 1;
+  justify-self: center;
+}
+
+.botao-currilo li {
+  list-style: none;
+}
+
+.botao-currilo li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 10px;
+  margin-right: 175px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(lightblue, white);
+}
+
+.section h2 {
+  margin: 0;
+  margin-left: 112px;
+  padding: 50px 0 30px 42px;
+}
+.bikepreta {
+  width: 300px;
+  height: 200px;
+  margin-left: 112px;
+}
+
+figcaption {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 112px;
+}
+
+@media (max-width: 28.125rem) {
+  margin {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    gap: 1.25rem;
+  }
+}
